@@ -35,7 +35,7 @@
   }
   df = df.rename(columns=columnas_espanol)
 
-  [R] Resultado: Un DataFrame estandarizado con 17 columnas traducidas, libres de caracteres invisibles y listas para ser procesadas sin errores sintácticos.
+[R] Resultado: Un DataFrame estandarizado con 17 columnas traducidas, libres de caracteres invisibles y listas para ser procesadas sin errores sintácticos.
 
 [Fase 2: Transformación y Modelado de Data Marts]
 1. Generación de Resúmenes Estratégicos vía Agregación Nombrada (Named Aggregation)
@@ -44,8 +44,8 @@
 [D] Decisión: Diseñar 3 Data Marts (tablas resumidas) agregando métricas clave (sum, mean) mediante la técnica moderna de Named Aggregation de Pandas para renombrar y consolidar campos en un solo paso, incluyendo el cálculo derivado del porcentaje de margen bruto.
 
 [A] Acción: Construcción de las 3 consultas analíticas en Python:
+  
   ```python
-
 # 1. Rendimiento y Margen por Sucursal
 resumen_sucursal = (
     df.groupby('Sucursal')
@@ -90,12 +90,14 @@ resumen_pagos = (
         by=['Sucursal', 'Ventas_Totales'], ascending=[True, False]
     )
     .round(2)
-)
-* **[R] Resultado:** Tres DataFrames independientes, limpios y redondeados a 2 decimales, optimizados estructuralmente para ser inyectados directamente vía API a la capa de visualización en Google Sheets.
+) 
+  ```
+
+[R] Resultado: Tres DataFrames independientes, limpios y redondeados a 2 decimales, optimizados estructuralmente para ser inyectados
+directamente vía API a la capa de visualización en Google Sheets.
 
 ---
-
-## [Fase 3: Carga Cloud e Integración API] *(En progreso)*
+[Fase 3: Carga Cloud e Integración API] *(En progreso)*
 
 ### 1. Conexión Automatizada con Google Sheets API (`gspread`)
 
