@@ -1,10 +1,15 @@
-🏦 Repositorio Técnico: Pipeline ETL y Análisis de Riesgo CMF
-Este repositorio contiene el código fuente, scripts de automatización y bitácora técnica del proyecto de Análisis de Riesgo Financiero (CMF Chile).
+# 🛒 Repositorio Técnico: Automatización de Pipeline ETL y Reporte en Google Sheets
 
-🌐 👉 Volver a la Presentación Completa del Proyecto en el Portafolio
+Este repositorio contiene el código fuente, los scripts de automatización en Python y la bitácora de ingeniería del proyecto de **Análisis de Ventas e Ingresos para Cadena de Supermercados**.
 
-📂 Estructura del Repositorio
-📜 scripts/: Contiene el script de Python (etl_excel_to_csv.py) para la extracción y limpieza masiva de 48 archivos Excel a CSV.
-📝 docs/: Contiene la bitácora técnica de desarrollo (data_journal.md) bajo metodología P.D.A.R.
-📊 sql/: Consultas y Vistas consolidadas en Google BigQuery para la serie histórica de 12 meses.
-Nota: Este proyecto analiza la cartera de crédito, morosidad y provisiones de la banca chilena utilizando Python, Google BigQuery y Power BI.
+🌐 👉 **[Volver a la Presentación Completa del Proyecto en el Portafolio](https://github.com/Hector-Argomedo-Data/proyecto-supermercado-automatizacion)**
+
+---
+
+## 📂 Estructura del Repositorio
+
+* 📜 **`scripts/`**: Contiene los scripts de Python para el Análisis Exploratorio de Datos (EDA), limpieza, estandarización de columnas y el flujo de conexión vía API (`gspread`) hacia Google Sheets.
+* 📝 **`docs/`**: Contiene la bitácora técnica de desarrollo (`data_journal.md`) bajo la metodología **P.D.A.R.** (Problema, Decisión, Acción, Resultado).
+* 📊 **`data/`**: Carpeta de datos fuente (transacciones en CSV) y datasets procesados (*Data Marts* por sucursal y categoría).
+
+> **Nota:** Este proyecto analiza un volumen de 1,000 transacciones atómicas de retail en 3 sucursales, automatizando la actualización de un Dashboard ejecutivo en la nube sin intervención manual.
