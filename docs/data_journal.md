@@ -44,8 +44,8 @@
 [D] Decisión: Diseñar 3 Data Marts (tablas resumidas) agregando métricas clave (sum, mean) mediante la técnica moderna de Named Aggregation de Pandas para renombrar y consolidar campos en un solo paso, incluyendo el cálculo derivado del porcentaje de margen bruto.
 
 [A] Acción: Construcción de las 3 consultas analíticas en Python:
+  ```python
 
-Python
 # 1. Rendimiento y Margen por Sucursal
 resumen_sucursal = (
     df.groupby('Sucursal')
