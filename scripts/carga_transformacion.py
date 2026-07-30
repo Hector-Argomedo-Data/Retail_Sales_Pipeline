@@ -63,8 +63,8 @@ resumen_sucursal['Pct_Margen_Bruto'] = (
 # Redondeamos a 2 decimales para limpieza ejecutiva
 resumen_sucursal = resumen_sucursal.round(2)
 
-print("--- 1. RENDIMIENTO POR SUCURSAL ---")
-print(resumen_sucursal)
+print("\n--- 1. RENDIMIENTO POR SUCURSAL ---")
+resumen_sucursal
 
 # ---------------------------------------------------------
 # CONSULTA 2: Análisis por Línea de Producto
@@ -79,7 +79,7 @@ resumen_productos = df.groupby('Linea_Producto').agg(
 resumen_productos = resumen_productos.round(2)
 
 print("\n--- 2. RENDIMIENTO POR LÍNEA DE PRODUCTO ---")
-print(resumen_productos)
+resumen_productos
 
 # ---------------------------------------------------------
 # CONSULTA 3: Preferencia de Pago por Sucursal
@@ -93,4 +93,4 @@ resumen_pagos = df.groupby(['Sucursal', 'Metodo_Pago']).agg(
 resumen_pagos = resumen_pagos.round(2)
 
 print("\n--- 3. MÉTODOS DE PAGO POR SUCURSAL ---")
-print(resumen_pagos)
+resumen_pagos
