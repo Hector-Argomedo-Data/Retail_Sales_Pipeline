@@ -1,4 +1,4 @@
-# 🛒 Repositorio Técnico: Automatización de Pipeline ETL y Reporte en Google Sheets
+# 🛒 Retail Sales Pipeline: Automated Cloud ETL & Inventory Analytics
 
 Este repositorio contiene el código fuente, los scripts de automatización en Python y la bitácora de ingeniería del proyecto de **Análisis de Ventas e Ingresos para Cadena de Supermercados**.
 
